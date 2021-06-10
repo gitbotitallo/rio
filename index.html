@@ -29,10 +29,26 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="styleload.css">
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+
+
+    <div class="loader-container">
+        <div class="cardcontainer">
+            <img id="rio" src="rio.png" alt="">
+            <img id="rulerl" src="rule.png" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        $(window).on("load",function(){
+            $(".loader-container").fadeOut(1000);
+        });
+    </script>
     <div class="container-fluid p-0" style="overflow-x: hidden;">
       <div id="r1" class="row justify-content-center text-center">
         <div class="col-12 p-0">
