@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="nivel" content="1.11">
+    <meta name="pNivelMin" content="2.5">
+    <meta name="pNivelMax" content="2.8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nivel do Rio Doce</title>
+
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid p-0" style="overflow-x: hidden;">
+      <div id="r1" class="row justify-content-center text-center">
+        <div class="col-12 p-0">
+          <img id="ruler" src="./rule.png" alt="" srcset="" class="d-inline" />
+          <div
+            id="w1d"
+            style="font-size: 0"
+          >
+          <svg  id="w0svg" version="1.1" xmlns="http://www.w3.org/2000/svg"><path id="w0" d=""/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="r2"
+        class="row justify-content-center text-center"
+        style="margin-top: -3px"
+      >
+        <div class="col-12 p-0">
+          <div
+            class="container-fluid text-center p-0 position-relative"
+            style="background-color: #2690a8"
+          >
+            <h2 id="title" class="text-white title">O nível do Rio Doce está <span id="status">normal</span></h2>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+      <div
+      id="r3"
+        class="row justify-content-center text-center"
+        style="margin-top: -1px"
+      >
+        <div class="col-12 p-0">
+          <div
+            class="container-fluid p-0 position-relative"
+            style="background-color: #319fbc; font-size: 0; margin-top: -3px"
+          >
+          <svg viewBox="2.393 181.995 1437.607 62.166" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#2690a8" fill-opacity="1" d="M 0 235.967 L 60 225.267 C 120 214.967 240 192.967 360 198.667 C 480 203.967 600 235.967 720 241.267 C 840 246.967 962.393 236.136 1082.393 225.836 C 1202.393 215.136 1363.08 193.595 1431.058 215.135 L 1440 217.529 L 1440.797 174.027 L 1380.797 174.027 C 1320.797 174.027 1200.797 174.027 1080.797 174.027 C 960.797 174.027 840.797 174.027 720.797 174.027 C 600.797 174.027 480.797 174.027 360.797 174.027 C 240.797 174.027 120.797 174.027 60.797 174.027 L 0.797 174.027 L 0 235.967 Z"/>
+          </svg>
+          </div>
+          <div
+            class="container-fluid text-center p-0 position-relative"
+            style="background-color: #319fbc; margin-top: -2px"
+          >
+            <h2 id="content1" class="text-white title content1">
+              O nivel do rio é de 1.42 metros, estando dentro da faixa normal de
+              1 a 2m
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div
+      id="r4"
+        class="row justify-content-center text-center"
+        style="margin-top: -4px"
+      >
+        <div class="col-12 p-0">
+          <div
+            class="container-fluid p-0 position-relative prevCont"
+            style="background-color: #40b3db; font-size: 0; margin-top: -2px"
+          >
+          <svg id="w3" viewBox="0 90.2 1440 229.8" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#319fbc" fill-opacity="1" d="M 0 224 L 60 197.3 C 120 171 240 117 360 117.3 C 480 117 600 171 720 176 C 840 181 960 139 1080 138.7 C 1200 139 1320 181 1380 202.7 L 1440 224 L 1440 90.2 L 1380 90.2 C 1320 90.2 1200 90.2 1080 90.2 C 960 90.2 840 90.2 720 90.2 C 600 90.2 480 90.2 360 90.2 C 240 90.2 120 90.2 60 90.2 L 0 90.2 L 0 224 Z"/>
+          </svg>
+          </div>
+          <div
+            class="container-fluid text-center p-0 position-relative prevCont"
+            style="background-color: #40b3db; margin-top: -2px"
+          >
+            <h2 id="title2" class="text-white title2">
+                Nenhuma anomalia foi detectada
+            </h2>
+            <h2 id="content2" class="text-white content2 text-center">
+                Ufaa! Nossa AI não  previu nenhuma variação anormal no nível do rio para os próximos dias
+            </h2>
+
+          </div>
+        </div>
+      </div>
+
+      <div
+      id="r4"
+        class="row justify-content-center text-center" 
+      >
+        <div class="col-12 p-0">
+          <div
+            class="container-fluid p-0 position-relative"
+          >
+            <h2 class="text-center"id="title3">
+                Como realizamos as previsões?
+            </h2>
+            <h2 id="content3">
+                Utilizamos uma rede neural artificial para prever o nível do rio para os próximos dias, por isso, devido a fatores externos desconsiderados, nem sempre as previsões
+            </h2>
+            </div>
+        </div>
+      </div>
+
+      <div
+      id="r4"
+        class="row justify-content-center text-center" style="background-color: white;"
+      >
+        <div class="col-12 p-0">
+          <div
+            class="container-fluid p-0 position-relative"
+          >
+            <h2 id="title3">
+                Manda um oi pra gente!
+            </h2>
+            <h2 id="content3" style="line-height: 50px; color:rgb(27, 27, 27);">
+                italloleitelc@gmail.com<br>
+                leledograu@gmail.com
+
+            </h2>
+
+            <h3 id="footer">Desenvolvido por Alexandre e Itallo</h3>
+            </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        const NivelMin = 1.0;
+        const NivelMax = 2.0;
+        const ErrorMargin = 0.10; //em metros
+        var nivel = Number($('meta[name=nivel]').prop('content'));
+        var pNivelMin = Number($('meta[name=pNivelMin]').prop('content'));
+        var pNivelMax = Number($('meta[name=pNivelMax]').prop('content'));
+
+        function percentage(percent, total) {
+            return Number(((percent/ 100) * total).toFixed(2))
+        }
+
+        function setSize(){
+            var padding = ($(window).height()-($("#r1").outerHeight() + $("#r2").outerHeight() + $("#r3").outerHeight()))-($("#w3").outerHeight()/2);
+    
+            $("#title").css("padding-top",percentage(25, padding));
+            $("#title").css("padding-bottom",percentage(35, padding));
+            $("#content1").css("padding-top",percentage(15, padding));
+            $("#content1").css("padding-bottom",percentage(25, padding));
+            console.log("ssdfsdf");
+        };
+        setSize();
+
+        if(nivel >= NivelMin && nivel <= NivelMax){
+            $("#content1").html("O nível do rio é de <span style='color:#79de79;'>"+nivel+" m</span>, estando dentro da faixa normal de 1 a 2 m");
+            $("#title").html("O Nível do Rio Doce está <span style='color:#79de79;'>normal</span>");
+
+        }
+
+        else if(nivel < NivelMin || nivel > NivelMax){
+            console.log(NivelMin,nivel,"saddawsdasd");
+            $("#content1").html("O nível do rio é de <span style='color:#fb6962;'>"+nivel+" m</span>, estando fora da faixa normal de 1 a 2 m");
+            $("#title").html("O Nível do Rio Doce está <span style='color:#fb6962;'>anormal</span>");
+            if(nivel > NivelMax){
+                $("#ruler").attr("src","./rulehigh.png");
+                $("#ruler").css("top","20%");
+                if($(window).width() <= 576){
+                    $("#ruler").css("top","30%");
+
+                }
+            }
+            else if(nivel < NivelMin){
+                $("#ruler").attr("src","./rulelow.png");
+                $("#ruler").css("top","5%");
+                if($(window).width() <= 576){
+                    $("#ruler").css("bottom","280px");
+                    console.log("sdfsfafasfasdfasdfasfd");
+
+                }
+
+            }
+            
+        }
+
+        if(NivelMin > pNivelMin + ErrorMargin || NivelMax < pNivelMax - ErrorMargin){
+        
+            $("#title2").text('Uma anomalia no nível do rio foi detectada!');
+            ($("#title2").removeClass('text-white')).css('color','#2f2f2f');   //Uma anomalia no nível do rio foi detectada!
+            ($("#content2").removeClass('text-white')).css('color','#494949');
+            $(".prevCont").css('background-color','#ffe879');
+
+            if(NivelMin >= pNivelMin + ErrorMargin){
+                //previsão abaixo do normal
+                $("#content2").text('Vish! Nossa AI previu um possível nível abaixo do normal para os próximos dias, podendo ficar entre: '+pNivelMin+' a '+pNivelMax+' m');
+            }
+            else if(NivelMax <= pNivelMin - ErrorMargin){
+                //previsão acima do normal
+                $("#content2").text('Vish! Nossa AI previu um possível nível acima do normal para os próximos dias, podendo ficar entre: '+pNivelMin+' a '+pNivelMax+' m');
+
+            }
+        }
+
+
+
+        $('#w0').wavify({
+            height: 10,
+            bones: 3,
+            amplitude: 40,
+            color: '#2690a8',
+            speed: .10
+          });
+
+    </script>
+  </body>
+</html>
